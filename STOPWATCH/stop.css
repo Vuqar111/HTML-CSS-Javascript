@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    --timecolor: #58595B;
+    --startcolor: #15FA00;
+    --stopcolor: #FA2400;
+    --resetcolor: #00D3FF;
+    --bordercolor: black;
+    --nighticoncolor: black;
+    --backgroundcolor: white;
+    --textcolor: black;
+
+    background-color: var(--backgroundcolor);
+    color: var(--textcolor);
+
+}
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+h2 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 120px;
+    font-weight: bold;
+    color: var(--timecolor);
+}
+#san {
+    font-size: 50px;
+    margin-left: 10px;
+}
+.buttons {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#start {
+   width: 100px;
+   height: 45px;
+   font-family: 'Black Ops One', cursive;
+   outline: none;
+   cursor: pointer;
+   color: var(--textcolor);
+   border: 3px solid var(--bordercolor);
+   background-color: var(--startcolor);
+
+}
+#reset {
+    width: 100px;
+    height: 45px;
+    font-family: 'Black Ops One', cursive;
+    outline: none;
+    color: var(--textcolor);
+    cursor: pointer;
+    border: 3px solid var(--bordercolor);
+    background-color:  var(--resetcolor);
+  
+}
+#stop {
+    width: 100px;
+    height: 45px;
+    font-family: 'Black Ops One', cursive;
+    outline: none;
+    color: var(--textcolor);
+    cursor: pointer;
+    border: 3px solid var(--bordercolor);
+    background-color: var(--stopcolor);
+}
+
+.night {
+     float: right;
+     margin-right: 30px;
+     margin-top: 3vh;
+}
+.nightmoon {
+    background: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.nightmoon i {
+    font-size: 43px;
+    
+}
+.nightmoon i {
+    color: var(--nighticoncolor);
+}
+
+body.dark {
+    --backgroundcolor: black;
+    --textcolor: white;
+    --timecolor: #F07F00;
+    --bordercolor: white;
+    --nighticoncolor: white;
+}
+
