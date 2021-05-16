@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    text-align: center;
+}
+.flag {
+    margin-left: 580px;
+    border: 1px solid black;
+    width: 400px;
+    height: 210px;
+}
+.blue {
+    background-color: blue;
+    height: 70px;
+    border-bottom: 1px solid black;
+}
+.red {
+    background-color: red;
+    height: 70px;
+    border-bottom: 1px solid black;
+}
+.red i {
+    font-size: 45px;
+    margin-left: 170px;
+    margin-top: 12px;
+    color: white;
+}
+
+
+
+.green {
+    background-color: green;
+    height: 70px;
+    border-bottom: 1px solid black;
+}
