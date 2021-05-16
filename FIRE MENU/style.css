@@ -1,0 +1,74 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'bebas', sans-serif;
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body .textcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+body .particletext {
+    text-align: center;
+    font-size: 48px;
+    position: relative;
+    font-family: 'Lilita One', cursive;
+    font-weight: bold;
+    margin: 0 30px;
+    cursor: pointer;
+}
+.particletext:hover {
+  font-size: 50px;
+  transition: 2s;
+}
+
+body .particletext.fire > .particle {
+    position: absolute;
+    background-color: rgba(255, 193, 7, 0.5);
+    border-radius: 40px;
+    border-top-right-radius: 0px;
+    animation: fires 0.8s linear infinite;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+body .particletext.fire > .particle:before {
+    position: absolute;
+    content: '';
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    border-radius: 40px;
+    border-top-right-radius: 0px;
+    background-color: rgba(251, 140, 0, 0.5);
+}
+
+@keyframes fires {
+    0% {
+        transform: rotate(-70deg) translateY(0%);
+   }
+    25% {
+        transform: rotate(-20deg) translateY(-5%);
+        opacity: 1;
+   }
+    50% {
+        transform: rotate(-70deg) translateY(-10%);
+   }
+    75% {
+        transform: rotate(-20deg) translateY(-20%);
+   }
+    100% {
+        transform: rotate(-70deg) translateY(-40%);
+        opacity: 1;
+   }
+}
+
