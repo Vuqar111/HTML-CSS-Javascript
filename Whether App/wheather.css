@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+  
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8D9091;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    height: 80vh;
+    background: url(./images/weather.png) no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.main-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #596570;
+    z-index: 0;
+    
+}
+
+
+
+.top {
+    text-align: center;
+    z-index: 999;
+}
+
+form {
+    display: flex;  
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.top input,
+.top button {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 10px;
+    padding: 10px;
+    outline: none;
+   border: none;
+    border-radius: 5px;
+}
+
+.top input {
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+}
+
+
+
+.top button {
+    width: 80px;
+    height: 40px;
+    background-color: #595970;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.top button:hover {
+    background-color: #b05102;
+}
+
+.top .error {
+    color: white;
+    font-size: 14px;
+}
+
+.icon {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 15px;
+  
+}
+
+
+.location {
+    padding-bottom: 15px;
+    text-align: center;
+    color: white;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.location .city {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.current {
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    border-top: 3px solid white;
+  
+}
+.current > div {
+    margin-top: 10px;
+}
+
