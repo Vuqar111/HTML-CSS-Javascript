@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>CountDown Timer</title>
+    <link rel="stylesheet" href="countdown.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+      <div class="container">
+          <div class="timedisplay">
+              <h2><span class="time">25</span>:<span class="min">00</span></h2>
+          </div>
+<div class="buttons">
+    <button class="start" onclick="starttimer()" >START</button>
+    <button class="stop" onclick="template()">STOP</button>
+   <div class="timevalue">
+       <button class="up" onclick="upbutton()" ><i class="fas fa-sort-up"></i></button>
+       <button class="down"  onclick="downbutton()"><i class="fas fa-sort-down"></i></button>
+   </div>
+    
+</div>
+      </div>
+      <script src="countdown.js"></script>
+</body>
+</html>

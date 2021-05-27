@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(2, 66%, 58%);
+}
+.container {
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+ background-color: hsl(357, 74%, 67%);;
+}
+.timedisplay h2 {
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 130px;
+    color: white;
+    font-weight: bold;
+    font-family: 'ArialRounded', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'
+}
+.buttons {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 25px;
+}
+.buttons button {
+    width: 140px;
+    height: 50px;
+    outline: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+.timevalue button {
+    background: none;  
+    width: 20px;
+    background-color: white;
+    font-size: 20px;
+    color: black;
+ text-align: center;
+}
+
