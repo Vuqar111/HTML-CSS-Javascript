@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(226, 11, 180);
+}
+.counter {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+text-align: center;
+}
+.counter-container {
+    margin-left: 90px;
+}
+
+i {
+    color: white;
+    font-size: 90px;
+}
+.number {
+    color: white;
+    font-size: 25px;
+    font-family: 'Montserrat';
+}
